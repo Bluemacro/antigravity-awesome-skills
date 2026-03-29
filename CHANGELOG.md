@@ -9,6 +9,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [9.1.0] - 2026-03-28 - "SaaS Multi-Tenancy and Three.js r183 Refresh"
+
+> Installable skill library update for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and related AI coding assistants.
+
+Start here:
+
+- Install: `npx antigravity-awesome-skills`
+- Choose your tool: [README -> Choose Your Tool](https://github.com/sickn33/antigravity-awesome-skills#choose-your-tool)
+- Best skills by tool: [README -> Best Skills By Tool](https://github.com/sickn33/antigravity-awesome-skills#best-skills-by-tool)
+- Bundles: [docs/users/bundles.md](https://github.com/sickn33/antigravity-awesome-skills/blob/main/docs/users/bundles.md)
+- Workflows: [docs/users/workflows.md](https://github.com/sickn33/antigravity-awesome-skills/blob/main/docs/users/workflows.md)
+
+This release adds two new skills for phase-gated debugging and multi-tenant SaaS architecture, modernizes the Three.js skill stack for r183 and newer WebGPU/TSL-era patterns, and expands community discovery with `claude-dash` for Claude Code status visibility.
+
+## New Skills
+
+- **phase-gated-debugging** - adds a strict five-phase debugging workflow that blocks code edits until the root cause is identified and confirmed with the user (PR #409).
+- **saas-multi-tenant** - adds production-focused guidance for multi-tenant SaaS architecture with PostgreSQL row-level security, tenant-scoped queries, and safe cross-tenant admin patterns (PR #411).
+
+## Improvements
+
+- **Three.js modernization** - refreshes 11 Three.js skills from older r128-era guidance to r183-compatible patterns, including modern import maps, `outputColorSpace`, `Timer`, `setAnimationLoop`, WebGPU/TSL awareness, and updated loaders, materials, shaders, and post-processing coverage (PR #408).
+- **Community discovery** - adds `claude-dash` to the README community-contributed section for a real-time Claude Code statusline covering context, cost, quota, cache, tools, and git status (PR #412).
+
+## Who should care
+
+- **Claude Code users** get a new phase-gated debugging workflow plus easier discovery of `claude-dash` for live session visibility.
+- **Codex CLI, Cursor, and Gemini CLI users** get a new multi-tenant SaaS architecture skill and a modernized Three.js guidance set for current graphics workflows.
+- **Frontend and creative coding teams** get updated Three.js docs that better reflect the current WebGPU, TSL, and r183 ecosystem.
+
+## Credits
+
+- **[@Jonohobs](https://github.com/Jonohobs)** for modernizing the Three.js skill stack in PR #408
+- **[@krabat-l](https://github.com/krabat-l)** for the new `phase-gated-debugging` skill in PR #409 and the `claude-dash` community listing in PR #412
+- **[@sx4im](https://github.com/sx4im)** for the new `saas-multi-tenant` skill in PR #411
+
 ## [9.0.0] - 2026-03-27 - "Claude Code and Codex Plugin Release"
 
 > Full release for the installable skill library, now with first-class plugin distributions for Claude Code and Codex plus the normal GitHub Release publication flow.
